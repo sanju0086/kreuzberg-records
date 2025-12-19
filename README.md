@@ -16,7 +16,7 @@ A premium, modern music store website inspired by underground electronic culture
 - JavaScript (Vanilla)
 
 ## 🌍 Live Demo
-👉 https://sanju0086.github.io/kreuzberg-records/
+👉 https://cozy-licorice-801aeb.netlify.app/cart
 
 ## 👨‍💻 Developer
 **Sanju Yadav**  
@@ -24,3 +24,4 @@ A premium, modern music store website inspired by underground electronic culture
 📱 9729776763  
 🔗 [LinkedIn](https://www.linkedin.com/in/sanju-yadav-8304462b1/)  
 🐙 [GitHub](https://github.com/sanju0086)
+
