@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kreuzberg Records</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- INTRO HERO -->
+<section id="intro">
+  <h1>KREUZBERG</h1>
+  <p id="changing-text">Underground vinyl culture</p>
+</section>
+
+<!-- MAIN CONTENT WRAPPER -->
+<div id="main-content">
+  <!-- ⚠️ TERA PURA EXISTING CODE YAHA RAHEGA -->
+</div>
+
+<!-- ================= LOADER ================= -->
+<div id="loader">
+  <h1>KREUZBERG</h1>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav">
+  <div class="nav-container nav-advanced">
+
+    <!-- BACK BUTTON -->
+    <button class="nav-back" onclick="goBack()">
+      ← Back
+    </button>
+
+    <!-- LOGO -->
+    <div class="logo">KRS</div>
+
+    <!-- MENU -->
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart <span id="cartCount">(0)</span></a>
+    </nav>
+
+  </div>
+</header>
+
+
+  </div>
+</header>
+
+<!-- ================= THEME CONTROLS ================= -->
+<div class="theme-panel">
+  <div class="theme-title">🎨 Choose Theme</div>
+
+<div class="theme-colors">
+  <span data-color="#00ff66" title="Green"></span>
+  <span data-color="#facc15" title="Yellow"></span>
+  <span data-color="#ec4899" title="Pink"></span>
+  <span data-color="#3b82f6" title="Blue"></span>
+  <span data-color="#a855f7" title="Purple"></span>
+  <span data-color="#06b6d4" title="Cyan"></span>
+  <span data-color="#f97316" title="Orange"></span>
+  <span data-color="#ffffff" title="White"></span>
+  <span data-color="#000000" title="Black"></span>
+</div>
+
+</div>
+
+<!-- ================= HERO VIDEO ================= -->
+<section class="video-banner">
+  <video autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="v-overlay">
+    <h1>KREUZBERG RECORDS</h1>
+    <p>Underground vinyl & electronic culture — Berlin</p>
+    <input class="v-search" type="text" placeholder="Search albums...">
+  </div>
+</section>
+<!-- ================= FULLSCREEN VIDEO MODAL ================= -->
+<div class="video-modal" id="videoModal">
+  <div class="video-modal-inner">
+
+    <!-- CLOSE -->
+    <button class="video-close" id="closeVideo">✕</button>
+
+    <!-- VIDEO -->
+    <video id="modalVideo" controls autoplay>
+      <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <!-- PLAYLIST -->
+    <div class="video-playlist">
+      <div class="playlist-title">Albums</div>
+
+      <div class="playlist-track">
+        <div class="playlist-item active">Berlin Underground</div>
+        <div class="playlist-item">Dark Techno</div>
+        <div class="playlist-item">Minimal Waves</div>
+        <div class="playlist-item">Analog Dreams</div>
+        <div class="playlist-item">Vinyl Classics</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= INFINITE SLIDER ================= -->
+<section class="slider-wrapper">
+  <div class="slider" id="slider"></div>
+</section>
+
+<!-- ================= GENRES ================= -->
+<section class="genres">
+  <button class="g-btn" data-genre="All">All</button>
+  <button class="g-btn" data-genre="Electronic">Electronic</button>
+  <button class="g-btn" data-genre="Techno">Techno</button>
+  <button class="g-btn" data-genre="House">House</button>
+  <button class="g-btn" data-genre="Ambient">Ambient</button>
+  <button class="g-btn" data-genre="Bass">Bass</button>
+</section>
+
+<!-- ================= ALBUM GRID ================= -->
+<section class="grid" id="albumGrid"></section>
+
+<!-- ================= LOAD BUTTONS ================= -->
+<div class="center">
+  <button id="loadBtn" class="load-btn">Load More</button>
+  <button id="loadLessBtn" class="load-btn" style="display:none;">Load Less</button>
+</div>
+
+<!-- ================= REVIEWS ================= -->
+<section class="reviews">
+  <h2>What People Say</h2>
+  <div class="review-wrapper">
+    <div class="review-track" id="reviewTrack"></div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  © 2025 Kreuzberg Records — Berlin  
+  <br>
+  Developed with ❤️ by Sanju
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="albumData.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

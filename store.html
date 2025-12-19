@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Store – Kreuzberg Records</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav">
+  <div class="nav-container nav-advanced">
+
+    <!-- BACK -->
+    <button class="nav-back" onclick="goBack()">← Back</button>
+
+    <!-- LOGO -->
+    <div class="logo">KRS</div>
+
+    <!-- MENU -->
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="store.html" class="active">Store</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart <span id="cartCount">(0)</span></a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= STORE HERO ================= -->
+<section class="store-hero-premium">
+  <div class="store-hero-inner reveal">
+
+    <span class="store-eyebrow">Kreuzberg Collection</span>
+
+    <h1>Vinyl Store</h1>
+
+    <p>
+      A curated archive of underground electronic records.
+      Designed for collectors, selectors, and sound purists.
+    </p>
+
+  </div>
+
+  <div class="hero-divider"></div>
+</section>
+
+<!-- ================= STORE INTRO ================= -->
+<section class="store-intro-premium reveal">
+  <p>
+    Every record featured here is selected with intent —
+    limited pressings, independent labels, and sounds that exist
+    beyond charts and mainstream algorithms.
+  </p>
+</section>
+
+<!-- ================= FILTER BAR ================= -->
+<section class="filter-bar reveal">
+  <button class="g-btn" data-genre="All">All</button>
+  <button class="g-btn" data-genre="Techno">Techno</button>
+  <button class="g-btn" data-genre="House">House</button>
+  <button class="g-btn" data-genre="Electronic">Electronic</button>
+  <button class="g-btn" data-genre="Ambient">Ambient</button>
+</section>
+
+<!-- ================= STORE GRID ================= -->
+<section class="grid store-grid" id="albumGrid">
+  <!-- Albums injected via JS -->
+</section>
+
+<!-- ================= LOAD MORE ================= -->
+<div class="center">
+  <button id="loadBtn" class="load-btn">Load More</button>
+</div>
+
+<!-- ================= STORE STATEMENT ================= -->
+<section class="why-vinyl-band">
+  <div class="why-vinyl-inner reveal">
+
+    <h2>Why Vinyl Exists</h2>
+
+    <blockquote>
+      Vinyl is not convenience.  
+      Vinyl is commitment.
+    </blockquote>
+
+    <p>
+      It slows you down. It demands attention.
+      It creates a ritual between you and sound —
+      one side at a time.
+    </p>
+
+    <span class="why-sign">
+      — Kreuzberg Records
+    </span>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer reveal">
+  © 2025 Kreuzberg Records — Berlin
+</footer>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="albumData.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

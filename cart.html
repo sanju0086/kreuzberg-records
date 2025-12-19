@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart – Kreuzberg Records</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav">
+  <div class="nav-container nav-advanced">
+
+    <button class="nav-back" onclick="goBack()">← Back</button>
+
+    <div class="logo">KRS</div>
+
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="active">Cart <span id="cartCount">(0)</span></a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= CART HERO ================= -->
+<section class="cart-hero">
+  <span class="cart-eyebrow">Your Selection</span>
+  <h1>Shopping Cart</h1>
+</section>
+
+<!-- ================= CART CONTENT ================= -->
+<section class="cart-container">
+
+  <!-- CART ITEMS -->
+  <div class="cart-items" id="cartItems"></div>
+
+  <!-- CART SUMMARY -->
+  <div class="cart-summary">
+    <h3>Order Summary</h3>
+
+    <div class="summary-row">
+      <span>Total Items</span>
+      <span id="itemCount">0</span>
+    </div>
+
+    <div class="summary-row total">
+      <span>Total</span>
+      <span id="totalPrice">₹0</span>
+    </div>
+
+    <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+
+</section>
+
+<!-- EMPTY CART -->
+<section class="cart-empty" id="emptyCart">
+  <h2>Your cart is empty</h2>
+  <p>Browse the store and add records you love.</p>
+  <a href="store.html" class="load-btn">Go to Store</a>
+</section>
+
+<footer class="footer">
+  © 2025 Kreuzberg Records
+</footer>
+
+<script src="albumData.js"></script>
+<script src="script.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
